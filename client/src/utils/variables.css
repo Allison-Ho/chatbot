@@ -1,0 +1,23 @@
+:root {
+  /* fonts */
+  --main-font: 'Inter';
+  --page-title: 50px;
+  --section-heading: 42px;
+
+  /* mobile fonts */
+  --mobile-section-heading: 36px;
+
+  /* colors */
+  --dark-blue: #0F233B;
+  --white: #fff;
+  --gray: #717171;
+  --text-gray: #AAA5A5;
+  --light-gray: #c0c0c0;
+  --gray-white: #FBFAFA;
+  --purple: #6530E8;
+  --light-blue: #0A7AFF;
+
+  /* cards */
+  --card-shadow-bottom-right: 3px 3px 3px #D9D9D6;
+  --card-shadow-sides: 0px 0px 2px 2px #D9D9D6;
+}
