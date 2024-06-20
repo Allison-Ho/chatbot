@@ -8,14 +8,10 @@
   --mobile-section-heading: 36px;
 
   /* colors */
-  --dark-blue: #0F233B;
-  --white: #fff;
-  --gray: #717171;
-  --text-gray: #AAA5A5;
-  --light-gray: #c0c0c0;
-  --gray-white: #FBFAFA;
-  --purple: #6530E8;
-  --light-blue: #0A7AFF;
+  --dark-blue: #2D3250;
+  --light-blue: #424769;
+  --pastel-orange: #FFB17A;
+  --pastel-purple: #A7B4FF;
 
   /* cards */
   --card-shadow-bottom-right: 3px 3px 3px #D9D9D6;

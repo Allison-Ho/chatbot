@@ -1,0 +1,63 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar h1 {
+  font-size: 22px;
+  padding-top: 0.25em;
+}
+
+.navbar .edit-icon {
+  height: 24px;
+  width: 24px;
+  margin-right: 35px;
+}
+
+.navbar #outer-container {
+  width: 30px;
+  height: 20px;
+}
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  left: 26px;
+  top: 30px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: var(--pastel-orange);
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/* Sidebar wrapper styles */
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: var(--light-blue);
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+.bm-overlay {
+  background: var(--dark-blue);
+}
