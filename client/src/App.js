@@ -3,6 +3,8 @@ import React, { useEffect, useState } from 'react';
 import './utils/variables.css';
 import Navbar from './components/Navbar/Navbar'
 import Searchbar from './components/Searchbar/Searchbar'
+import ChatsList from './components/ChatsList/ChatsList'
+
 
 function App(){
   return(
@@ -10,6 +12,7 @@ function App(){
       <main>
         <Navbar />
         <Searchbar />
+        <ChatsList />
       </main>
     </div>
   )
