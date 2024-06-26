@@ -4,15 +4,16 @@ import './utils/variables.css';
 import Navbar from './components/Navbar/Navbar'
 import Searchbar from './components/Searchbar/Searchbar'
 import ChatsList from './components/ChatsList/ChatsList'
-
+import ChatView from './components/ChatView/ChatView'
 
 function App(){
   return(
     <div>
       <main>
-        <Navbar />
+        {/* <Navbar />
         <Searchbar />
-        <ChatsList />
+        <ChatsList /> */}
+        <ChatView />
       </main>
     </div>
   )

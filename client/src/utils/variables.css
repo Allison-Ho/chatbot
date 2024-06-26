@@ -10,8 +10,11 @@
   /* colors */
   --dark-blue: #2D3250;
   --light-blue: #424769;
+  --blue-gray: #676F9D;
   --pastel-orange: #FFB17A;
   --pastel-purple: #A7B4FF;
+  --beige: #EDE7D9;
+  --gray: #CECCCC;
 
   /* cards */
   --card-shadow-bottom-right: 3px 3px 3px #D9D9D6;

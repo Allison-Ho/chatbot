@@ -1,6 +1,7 @@
 body {
   background-color: var(--dark-blue);
   font-family: var(--main-font);
+  margin: 0;
 }
 
 main {
@@ -8,18 +9,25 @@ main {
   height: 100%;
 }
 
-h1, h2 {
+h1, h2, h3 {
   color: var(--pastel-orange);
 }
 
-.small-profile-photo {
+.sm-profile-photo {
+  width: 50px;
+  height: 42px;
+  border-radius: 50%;
+  margin-right: 1em;
+}
+
+.med-profile-photo {
   width: 60px;
   height: 52px;
   border-radius: 50%;
   margin-right: 1em;
 }
 
-.med-profile-photo {
+.lg-profile-photo {
   width: 100px;
   height: 92px;
   border-radius: 50%;
