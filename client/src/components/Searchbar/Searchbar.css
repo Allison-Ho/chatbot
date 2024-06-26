@@ -2,6 +2,7 @@
   text-align: center;
   width: 95%;
   margin: auto;
+  margin-top: 0.5em;
 }
 
 .searchbar {
@@ -20,10 +21,6 @@
 .searchbar input {
   border: none;
   background-color: #D9D9D9;
-}
-
-.searchbar input:focus {
-  outline: none
 }
 
 .search-filter .filters {

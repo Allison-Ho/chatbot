@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './ChatsList.css';
 import defaultProfile from '../../utils/img/default_profile_photo.webp'
 
 function ChatsList() {
   return (
     <div className='chats-list'>
-      <ChatPreview />
+      <Link to="/ChatView">
+        <ChatPreview />
+      </Link>
     </div>
   )
 }
