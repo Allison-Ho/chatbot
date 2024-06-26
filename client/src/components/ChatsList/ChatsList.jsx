@@ -14,7 +14,7 @@ function ChatPreview() {
   return (
     <div className='list-item'>
       <div className='preview'>
-        <img src={defaultProfile} alt='default spongebob'/>
+        <img className='small-profile-photo' src={defaultProfile} alt='default spongebob'/>
         <div className='chat-info'>
           <h3>spongebob</h3>
           <p>I see you.</p>
