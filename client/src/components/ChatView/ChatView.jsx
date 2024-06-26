@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './ChatView.css';
 import leftArrow from '../../utils/icons/left_arrow.svg';
 import sendIcon from '../../utils/icons/send.svg';
@@ -8,7 +9,9 @@ function ChatsView() {
   return (
     <div className='chat-view'>
       <div className='topbar'>
-        <img src={leftArrow} alt='left arrow' />
+        <Link to="/MainView">
+          <img src={leftArrow} alt='left arrow' />
+        </Link>
         <img className='sm-profile-photo' src={defaultProfile} alt='default spongebob'/>
         <h3>spongebob</h3>
       </div>
