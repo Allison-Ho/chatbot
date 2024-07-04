@@ -10,7 +10,7 @@ import { statusCheck } from './utils/utils';
 
 function App(){
   const {user, isAuthenticated, isLoading, getAccessTokenSilently} = useAuth0();
-  const [currUser, setCurrUser] = useState(null);
+  const [currUser, setCurrUser] = useState('spongebob');
 
   useEffect(() => {
     if (isAuthenticated) {
@@ -35,28 +35,30 @@ function App(){
         }
       }
 
-      async function getUserInfo() {
-        try {
-          const response = await fetch('/chatbot/users/get-user', {
+      async function getMsgs() {
+        console.log(user.email);
+        try{
+          const accessToken = await getAccessTokenSilently();
+          let res = await fetch('/chatbot/messages', {
             method: 'POST',
             headers: {
-              'Content-Type': 'application/json',
+              'Authorization': `Bearer ${accessToken}`,
+              'Content-Type': 'application/json'
             },
             body: JSON.stringify({
               email: user.email
-            }),
+            })
           });
-
-          await statusCheck(response);
-          const res = await response.json();
-          setCurrUser(res);
-        } catch (error) {
-          console.error('Error adding user to database:', error);
+          await statusCheck(res);
+          res = await res.json();
+          console.log(res);
+        }catch(err) {
+          console.error(err);
         }
       }
 
       addUserToDatabase();
-      getUserInfo();
+      getMsgs();
     }
   }, [getAccessTokenSilently, isAuthenticated])
 

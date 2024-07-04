@@ -16,13 +16,20 @@ async function main() {
     username: String
   });
 
+  const ConversationSchema = new mongoose.Schema({
+    participants: [mongoose.ObjectId]
+  });
+
   const MessageSchema = new mongoose.Schema({
     sender: String,
     receiver: String,
-    sentTime: {type: Date, default: Date.now}
-  })
+    sentTime: {type: Date, default: Date.now},
+    content: String,
+    convoId: mongoose.ObjectId
+  });
 
   models.User = mongoose.model('User', UserSchema);
+  models.Conversation = mongoose.model('Conversation', ConversationSchema);
   models.Message = mongoose.model('Message', MessageSchema);
   console.log('Models created');
 }
